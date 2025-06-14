@@ -1,0 +1,15 @@
+<h2>Đăng nhập admin</h2>
+<input type="password" id="pwd" placeholder="Nhập mật khẩu">
+<button onclick="login()">Đăng nhập</button>
+
+<script>
+function login() {
+  const pass = document.getElementById('pwd').value;
+  if (pass === 'admin123') {
+    localStorage.setItem('admin', '1');
+    location.href = '/admin/dashboard.html';
+  } else {
+    alert('Sai mật khẩu!');
+  }
+}
+</script>
