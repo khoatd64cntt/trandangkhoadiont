@@ -1,0 +1,7 @@
+<script>
+if (localStorage.getItem('admin') !== '1') {
+  alert("Bạn không có quyền truy cập!");
+  location.href = '/admin/index.html';
+}
+</script>
+<h1>Chào mừng Admin!</h1>
